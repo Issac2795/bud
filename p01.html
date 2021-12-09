@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Anthony Browne</title>
+    <link rel="stylesheet" href="master01.css">
+    <link rel="stylesheet" href="aos.css">
+  </head>
+  <body>
+    <header>
+      <a href="index.html">  <img src="img/1_1_logo.png" alt="logo"></a>
+    </header>
+
+    <nav>
+      <ul>
+        <li class="menu_sel select">
+          <a style="text-align: center;color:white;"href="p01.html">Introduce</a></li>
+        <li class="menu_tlt"><a href="p02.html">Book</a></li>
+            <li class="menu_space">│</li>
+        <li class="menu_tlt"><a href="p03.html">Illustration</a></li>
+            <li class="menu_space">│</li>
+        <li class="menu_tlt"><a href="p04.html">Collaboration</a></li>
+      </ul>
+    </nav>
+
+
+    <section>
+      <div class="cont1 cont_center" id="anchor3" data-aos="fade-down">
+        <img src="img/2_1_tlt.png" alt="설명"></div>
+
+      <div class="cont2 cont_center">
+        <a href="p02.html"> <img src="img/2_1_button.png" alt=""> </a> <img src="img/2_1_ob.png" alt="대표작품"> </a>
+      </div>
+
+      <div class="cont3 cont_center">
+        <img src="img/2_2_tlt.png" alt="각주">
+      </div>
+
+      <div class="cont4 cont_center" id="anchor3" data-aos="fade-down">
+        <img src="img/2_3_tlt.png" alt="연혁">
+        </div>
+
+    </section>
+    <footer>
+        <img src="img/1_2_logo.png" alt="logo">
+    </footer>
+
+
+
+    <!--AOS 스트립트 적용 부문 시작-->
+    <script src="aos.js"></script>
+    <script>
+    AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+    </script>
+    <!--AOS 스트립트 적용 부문 끝-->
+
+    <!--특정위치로 쩜프해서 이동 시작-->
+    <script type="text/javascript" src="jquery-latest.js"></script>
+    <script>
+      function fnMove(seq){
+          var offset = $("#anchor" + seq).offset();
+          $('html, body').animate({scrollTop : offset.top},500);
+      }
+    </script>
+    <!--특정위치로 쩜프해서 이동 시작-->
+
+  </body>
+</html>
